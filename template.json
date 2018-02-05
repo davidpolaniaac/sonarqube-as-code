@@ -16,10 +16,8 @@
     {
       "type": "shell",
       "inline": [
-        "git clone https://github.com/davidpolaniaac/devops-demo.git",
-        "cd devops-demo",
-        "docker build -t devops .",
-        "docker run -d -p 3000:3000 devops"
+        "docker pull sonarqube",
+        "docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube",
       ]
     }
   ]
