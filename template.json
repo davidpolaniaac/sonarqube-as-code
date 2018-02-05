@@ -5,7 +5,6 @@
   "builders": [
     {
       "type": "digitalocean",
-      "api_token": "{{env `DIGITALOCEAN_API_TOKEN`}}",
       "image": "coreos-stable",
       "region": "nyc3",
       "size": "512mb",
