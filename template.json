@@ -1,6 +1,6 @@
 {
   "variables": {
-    "build_number": "{{env `Build.BuildNumber`}}"
+    "build_number": "{{env `build_number`}}"
   },
   "builders": [
     {
