@@ -34,7 +34,7 @@ resource "digitalocean_droplet" "devops-sonarqube" {
   }
 
   provisioner "local-exec" {
-    command = "sleep 160 && curl ${self.ipv4_address}:9000"
+    command = "sleep 160 && ping ${self.ipv4_address}:9000"
   }
 
   user_data = <<EOF
