@@ -7,8 +7,8 @@
       "type": "digitalocean",
       "image": "coreos-stable",
       "region": "nyc3",
-      "size": "512mb",
-      "snapshot_name": "devops-{{user `build_number`}}",
+      "size": "2GB",
+      "snapshot_name": "devops-sonarqube-{{user `build_number`}}",
       "ssh_username": "core"
     }
   ],
