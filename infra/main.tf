@@ -4,14 +4,6 @@ variable "image_id" {
   type = "string"
 }
 
-variable "sonar_user" {
-  type = "string"
-}
-
-variable "sonar_password" {
-  type = "string"
-}
-
 provider "digitalocean" {
   token = "${var.do_token}"
 }
