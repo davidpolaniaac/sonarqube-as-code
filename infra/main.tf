@@ -44,6 +44,6 @@ coreos:
         Description=DevOps SonarQube
         After=docker.service
         [Service]
-        ExecStart=/usr/bin/docker run -d -p 9000:9000 -e SONARQUBE_JDBC_USERNAME=${var.sonar_user} -e SONARQUBE_JDBC_PASSWORD=${var.sonar_password} -e SONARQUBE_JDBC_URL=jdbc:sqlserver://polania.database.windows.net:1433\;database=SonarQubeDB sonarqube
+        ExecStart=/usr/bin/docker run -d --name sonarqube -p 9000:9000 sonarqube
 EOF
 }
