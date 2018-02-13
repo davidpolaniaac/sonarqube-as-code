@@ -8,7 +8,7 @@
       "image": "coreos-stable",
       "region": "nyc3",
       "size": "2GB",
-      "snapshot_name": "devops-artifactory-{{user `build_number`}}",
+      "snapshot_name": "devops-sonarqube-{{user `build_number`}}",
       "ssh_username": "core"
     }
   ],
@@ -16,7 +16,7 @@
     {
       "type": "shell",
       "inline": [
-        "docker pull docker.bintray.io/jfrog/artifactory-oss:latest"
+        "docker pull sonarqube"
       ]
     }
   ]
