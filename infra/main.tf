@@ -17,7 +17,7 @@ resource "digitalocean_droplet" "devops-sonarqube" {
   image    = "${var.image_id}"
   name     = "devops-sonarqube-v2"
   region   = "nyc3"
-  size     = "2GB"
+  size     = "4GB"
   ssh_keys = [18131326]
   tags     = ["${digitalocean_tag.devops-sonarqube.id}"]
 
